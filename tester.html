@@ -1,0 +1,21 @@
+<!DOCTYPE html> 
+<html>
+<head>
+  <title>tester</title> 
+</head> 
+ 
+<body> 
+  <canvas id="Game">
+    <div id="noworkie">Browser must support the &lt;canvas&gt; element!</div>
+  </canvas>
+
+  <script src="GameRunner.js" type="text/javascript"></script> 
+  <script src="Pong.js" type="text/javascript"></script>
+  <script type="text/javascript">
+  Game.ready(function() {
+    var pong = Game.start('Game', Pong);
+  });
+  </script>
+
+</body> 
+</html>
